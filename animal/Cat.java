@@ -1,11 +1,13 @@
 package animal;
-
 public class Cat extends Animal {
-    public void say() {
-        System.out.println("Meow meow!");
+    public Cat(String name) {
+        super(name);
     }
-    @Override
-    public void sleep() {
-        System.out.println("Meowwwww, no");
+    @Override public void say() {
+        System.out.println("Meow");
+    }
+    public void cmt(String text) {
+        super.comment();
+        System.out.println(name + " says: Meowww! " + text);
     }
 }
